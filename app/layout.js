@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+/* import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,6 +23,58 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
+ */
+/* import "./globals.css";
+
+export const metadata = {
+  title: "Mallikarjun Portfolio",
+  description: "Frontend Developer Portfolio",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+} */
+
+  import "./globals.css";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300","400","500","600","700"],
+});
+
+export const metadata = {
+  title: "Mallikarjun | Frontend Developer",
+  description:
+    "React.js and Next.js Developer Portfolio",
+
+  keywords: [
+    "React",
+    "Next.js",
+    "Frontend",
+    "Portfolio"
+  ],
+
+  openGraph: {
+    title: "Mallikarjun Portfolio",
+    description: "Frontend Developer",
+    images: ["/preview.png"]
+  }
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={poppins.className}>
+        {children}
+      </body>
     </html>
   );
 }
