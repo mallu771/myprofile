@@ -13,9 +13,11 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiExpress,
-  SiMysql
+  SiMysql,
+  SiGraphql,
+  SiPostgresql
 } from "react-icons/si";
-
+import { FaLayerGroup } from "react-icons/fa";
 export const skills = [
   { icon: FaReact, name: "React.js" },
   { icon: SiNextdotjs, name: "Next.js" },
@@ -28,5 +30,9 @@ export const skills = [
   { icon: SiMysql, name: "MySQL" },
   { icon: FaDatabase, name: "REST API" },
   { icon: FaGitAlt, name: "Git" },
-  { icon: FaGithub, name: "GitHub" }
+  { icon: FaGithub, name: "GitHub" },
+    { icon: SiGraphql, name: "GraphQL" },
+    { icon: SiPostgresql, name: "PostgreSQL" },
+   { icon: FaLayerGroup, name: "Shadcn UI" },
+
 ];
