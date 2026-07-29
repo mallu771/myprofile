@@ -46,12 +46,12 @@ export default function Hero() {
             transition={{ delay:.6 }}
             className="text-3xl mt-4 gradient-text"
           >
-            Frontend Developer
+            Software Engineer
           </motion.h2>
 
           <p className="text-gray-400 mt-8 leading-8">
             I build modern responsive web applications using
-            React, Next.js, Tailwind CSS and Node.js.
+            Svelte, React, Next.js, Tailwind CSS,Shadcn UI, PostgreSQL,GraphQL and Node.js.
           </p>
 
           <div className="flex gap-4 mt-10">
@@ -93,7 +93,7 @@ export default function Hero() {
           <div className="w-[420px] h-[420px] rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-1 glow">
             <div className="bg-[#0b1022] rounded-full w-full h-full flex items-center justify-center">
               <img
-                src="../../public/profile.jpeg"
+                src="/profile.jpeg"
                 alt="profile"
                 className="rounded-full w-80 h-80 object-cover"
               />
