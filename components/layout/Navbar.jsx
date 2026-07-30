@@ -43,7 +43,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">
-          Mallikarjun
+          Mallikarjun Bajantri
         </h1>
 
         {/* Desktop Navigation */}

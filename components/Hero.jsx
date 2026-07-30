@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import {
   FaReact,
   FaNodeJs,
@@ -37,7 +36,7 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="mt-3 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight"
           >
-            Mallikarjun
+            Mallikarjun 
           </motion.h1>
 
           <motion.h2
@@ -93,18 +92,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="order-1 lg:order-2 flex justify-center"
         >
-          <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 p-1 ">
+          <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-[#0b1022] flex items-center justify-center overflow-hidden">
-              
-
-<Image
-  src="/profile.jfif"
-  alt="Mallikarjun"
-  width={350}
-  height={350}
-  priority
-  className="rounded-full object-cover"
-/>
+              <img
+                src="/profile.jfif"
+                alt="Mallikarjun"
+                className="w-52 h-52 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
