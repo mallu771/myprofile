@@ -24,7 +24,7 @@ export default function Home() {
       <main className="relative bg-[#070B18] text-white min-h-screen overflow-x-hidden">
         <Navbar1 />
         <Hero1 />
-       <AnimatedBackground />
+     
         <Navbar />
 
         <About />

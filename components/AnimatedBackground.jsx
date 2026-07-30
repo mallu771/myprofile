@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 
 import { motion } from "framer-motion";
 
@@ -8,7 +8,7 @@ export default function AnimatedBackground() {
       {[...Array(25)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full bg-purple-500/10 blur-3xl"
+          className="absolute rounded-full bg-purple-500/10"
           style={{
             width: Math.random() * 200 + 100,
             height: Math.random() * 200 + 100,
@@ -27,4 +27,4 @@ export default function AnimatedBackground() {
       ))}
     </div>
   );
-}
+} */

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 
 export default function Contact() {
   return (
@@ -8,13 +8,10 @@ export default function Contact() {
 
       <div className="max-w-3xl mx-auto">
 
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          className="text-5xl font-bold text-center gradient-text mb-10"
-        >
+       
+    
           Contact Me
-        </motion.h2>
+      
 
         <form className="space-y-6">
 

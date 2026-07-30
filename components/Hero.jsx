@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   FaReact,
   FaNodeJs,
@@ -92,13 +93,18 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="order-1 lg:order-2 flex justify-center"
         >
-          <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 p-1 shadow-2xl">
+          <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 p-1 ">
             <div className="w-full h-full rounded-full bg-[#0b1022] flex items-center justify-center overflow-hidden">
-              <img
-                src="/profile.jfif"
-                alt="Mallikarjun"
-                className="w-52 h-52 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover"
-              />
+              
+
+<Image
+  src="/profile.jfif"
+  alt="Mallikarjun"
+  width={350}
+  height={350}
+  priority
+  className="rounded-full object-cover"
+/>
             </div>
           </div>
         </motion.div>
