@@ -16,91 +16,92 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-8"
+      className="min-h-screen flex items-center px-6 py-24"
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-
-        <div>
-
+      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        {/* Left Content */}
+        <div className="order-2 lg:order-1 text-center lg:text-left">
           <motion.p
-            initial={{ opacity:0,y:20 }}
-            animate={{ opacity:1,y:0 }}
-            transition={{ delay:.2 }}
-            className="text-purple-400"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-purple-400 text-lg"
           >
             Hello, I'm
           </motion.p>
 
           <motion.h1
-            initial={{ opacity:0,y:20 }}
-            animate={{ opacity:1,y:0 }}
-            transition={{ delay:.4 }}
-            className="text-6xl font-black mt-3"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-3 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight"
           >
             Mallikarjun
           </motion.h1>
 
           <motion.h2
-            initial={{ opacity:0 }}
-            animate={{ opacity:1 }}
-            transition={{ delay:.6 }}
-            className="text-3xl mt-4 gradient-text"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold text-purple-400"
           >
             Software Engineer
           </motion.h2>
 
-          <p className="text-gray-400 mt-8 leading-8">
-            I build modern responsive web applications using
-            Svelte, React, Next.js, Tailwind CSS,Shadcn UI, PostgreSQL,GraphQL and Node.js.
+          <p className="text-gray-400 mt-6 leading-8 max-w-xl mx-auto lg:mx-0">
+            I build modern, scalable and responsive web applications using
+            React.js, Next.js, Svelte, Tailwind CSS, Shadcn UI, GraphQL,
+            PostgreSQL, Express.js and Node.js with a focus on clean UI and
+            performance.
           </p>
 
-          <div className="flex gap-4 mt-10">
-
+          {/* Buttons */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="#projects"
-              className="bg-purple-600 px-8 py-4 rounded-xl hover:bg-purple-700"
+              className="bg-purple-600 hover:bg-purple-700 transition px-8 py-4 rounded-xl font-medium"
             >
               View Projects
             </a>
 
             <a
               href="/resume.pdf"
-              download
-              className="border border-purple-500 px-8 py-4 rounded-xl flex items-center gap-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-purple-500 hover:bg-purple-500/10 transition px-8 py-4 rounded-xl flex items-center justify-center gap-2"
             >
               <FaDownload />
               Resume
             </a>
-
           </div>
 
-          <div className="flex gap-8 mt-12 text-5xl text-purple-400">
-            <FaReact />
-            <SiNextdotjs />
-            <SiTailwindcss />
-            <FaNodeJs />
-            <FaGithub />
+          {/* Tech Icons */}
+          <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-6 text-3xl sm:text-4xl lg:text-5xl text-purple-400">
+            <FaReact className="hover:scale-110 transition" />
+            <SiNextdotjs className="hover:scale-110 transition" />
+            <SiTailwindcss className="hover:scale-110 transition" />
+            <FaNodeJs className="hover:scale-110 transition" />
+            <FaGithub className="hover:scale-110 transition" />
           </div>
-
         </div>
 
+        {/* Right Image */}
         <motion.div
-          initial={{ scale:.8, opacity:0 }}
-          animate={{ scale:1, opacity:1 }}
-          transition={{ duration:.8 }}
-          className="flex justify-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="order-1 lg:order-2 flex justify-center"
         >
-          <div className="w-[420px] h-[420px] rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-1 glow">
-            <div className="bg-[#0b1022] rounded-full w-full h-full flex items-center justify-center">
+          <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 p-1 shadow-2xl">
+            <div className="w-full h-full rounded-full bg-[#0b1022] flex items-center justify-center overflow-hidden">
               <img
                 src="/profile.jfif"
-                alt="profile"
-                className="rounded-full w-90 h-90 object-cover"
+                alt="Mallikarjun"
+                className="w-52 h-52 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover"
               />
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
