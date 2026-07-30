@@ -93,7 +93,7 @@ export default function Hero() {
           <div className="w-[420px] h-[420px] rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-1 glow">
             <div className="bg-[#0b1022] rounded-full w-full h-full flex items-center justify-center">
               <img
-                src="/profile.jpeg"
+                src="/profile.jfif"
                 alt="profile"
                 className="rounded-full w-90 h-90 object-cover"
               />
