@@ -95,7 +95,7 @@ export default function Hero() {
               <img
                 src="/profile.jpeg"
                 alt="profile"
-                className="rounded-full w-80 h-80 object-cover"
+                className="rounded-full w-90 h-90 object-cover"
               />
             </div>
           </div>
